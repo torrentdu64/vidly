@@ -227,6 +227,14 @@
     <Compile Include="Migrations\201910182255075_AddBirthdayToCustomer.Designer.cs">
       <DependentUpon>201910182255075_AddBirthdayToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910230324211_GenreModelChange.cs" />
+    <Compile Include="Migrations\201910230324211_GenreModelChange.Designer.cs">
+      <DependentUpon>201910230324211_GenreModelChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910252209385_ModelChangeToMovie.cs" />
+    <Compile Include="Migrations\201910252209385_ModelChangeToMovie.Designer.cs">
+      <DependentUpon>201910252209385_ModelChangeToMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -234,6 +242,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -261,6 +270,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -301,7 +312,8 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Show.cshtml" />
     <Content Include="Views\Movies\Show.cshtml" />
-    <Content Include="Views\Customers\New.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -358,6 +370,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910182255075_AddBirthdayToCustomer.resx">
       <DependentUpon>201910182255075_AddBirthdayToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910230324211_GenreModelChange.resx">
+      <DependentUpon>201910230324211_GenreModelChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910252209385_ModelChangeToMovie.resx">
+      <DependentUpon>201910252209385_ModelChangeToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
